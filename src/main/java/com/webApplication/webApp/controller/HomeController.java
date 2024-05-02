@@ -18,7 +18,6 @@ public class HomeController {
 	@RequestMapping("/addStudent")
 	public String addStudent( Student student){
 		repo.save(student);
-
 		return "home";
 	}
 }
